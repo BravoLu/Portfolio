@@ -12,10 +12,14 @@ import {
 } from "react-icons/di";
 import {
   SiRedis,
-  SiFirebase,
-  SiNextdotjs,
-  SiSolidity,
-  SiPostgresql,
+  SiJenkins,
+  SiKubernetes,
+  SiPrometheus,
+  SiGrafana,
+  SiKibana,
+  SiLogstash,
+  SiAnaconda,
+  SiElasticsearch,
 } from "react-icons/si";
 import { TbBrandGolang } from "react-icons/tb";
 
@@ -38,31 +42,40 @@ function Techstack() {
         <DiReact />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiSolidity />
+        <SiKubernetes />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiMongodb />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs />
+        <SiPrometheus />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiGit />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiFirebase />
+        <SiJenkins />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiRedis />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiPostgresql />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
         <DiPython />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiJava />
+        <SiGrafana />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiKibana />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiLogstash />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiAnaconda />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiElasticsearch />
       </Col>
     </Row>
   );
