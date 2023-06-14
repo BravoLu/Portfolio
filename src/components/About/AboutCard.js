@@ -9,8 +9,7 @@ function AboutCard() {
         <blockquote className="blockquote mb-0">
           <p style={{ textAlign: "justify" }}>
             Hi, I am <span className="purple">LU, Shaohao </span>
-            from <span className="purple"> Zhuhai, Guangdong, China.</span> I am a both software engineer and
-            algorithm engineer.
+            from <span className="purple"> Zhuhai, Guangdong, China.</span> I am a both software engineer and algorithm engineer.
             <br /> I got both the bachelor and the master degree in <span className="purple">Sun-Yat-Sen University</span>
             I have worked in <span className="purple">Tencent Inc.</span> for two years.
             <br />
@@ -21,13 +20,16 @@ function AboutCard() {
           </p>
           <ul>
             <li className="about-activity">
-              <ImPointRight /> Playing Games
+              <ImPointRight /> Games
             </li>
             <li className="about-activity">
               <ImPointRight /> Workout
             </li>
             <li className="about-activity">
               <ImPointRight /> Cooking
+            </li>
+            <li className="about-activity">
+              <ImPointRight /> Movies
             </li>
           </ul>
 
