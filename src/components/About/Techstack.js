@@ -1,5 +1,5 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
+import { Col, Row, Tooltip } from "react-bootstrap";
 import { CgCPlusPlus } from "react-icons/cg";
 import {
   DiJavascript1,
@@ -8,7 +8,6 @@ import {
   DiMongodb,
   DiPython,
   DiGit,
-  DiJava,
 } from "react-icons/di";
 import {
   SiRedis,
@@ -20,6 +19,7 @@ import {
   SiLogstash,
   SiAnaconda,
   SiElasticsearch,
+  SiTmux,
 } from "react-icons/si";
 import { TbBrandGolang } from "react-icons/tb";
 
@@ -42,7 +42,12 @@ function Techstack() {
         <DiReact />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiKubernetes />
+        <div className="tech-icon-container">
+          <a href="https://github.com/BravoLu/awesome_notes/blob/main/k8s.md" target="_blank">
+            <SiKubernetes />
+          </a>
+          <span className="tech-icon-tooltip">Kubernetes</span>
+        </div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiMongodb />
@@ -69,7 +74,17 @@ function Techstack() {
         <SiKibana />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiLogstash />
+        <div className="tech-icon-container">
+        <a href="https://github.com/BravoLu/awesome_notes/blob/main/logstash.md" target="_blank">
+          <SiLogstash />
+        </a>
+        <span className="tech-icon-tooltip">logstash</span>
+        </div>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <a href="https://github.com/BravoLu/awesome_notes/blob/main/tmux.md" target="_blank">
+          <SiTmux />
+        </a>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiAnaconda />

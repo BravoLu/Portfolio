@@ -741,3 +741,23 @@ button:focus {
 .fork-btn-inner::after {
   display: none !important;
 }
+
+.tech-icon-container {
+  position: relative;
+}
+.tech-icon-tooltip {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  visibility: hidden;
+  background-color: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 12px;
+  white-space: nowrap;
+}
+.tech-icon-container:hover .tech-icon-tooltip {
+  visibility: visible;
+}
