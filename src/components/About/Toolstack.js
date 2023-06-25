@@ -1,10 +1,10 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
 import {
-  SiVisualstudiocode,
-  SiPostman,
-  SiSlack,
-  SiVercel,
+  DiGit,
+} from "react-icons/di";
+import {
+  SiTmux,
   SiMacos,
 } from "react-icons/si";
 
@@ -15,16 +15,12 @@ function Toolstack() {
         <SiMacos />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiVisualstudiocode />
+        <DiGit />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiPostman />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiSlack />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiVercel />
+        <a href="https://github.com/BravoLu/awesome_notes/blob/main/tmux.md" target="_blank">
+          <SiTmux />
+        </a>
       </Col>
     </Row>
   );

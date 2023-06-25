@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import Github from "./Github";
+import Codestack from "./Codestack"
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/portrait2.jpeg";
@@ -34,6 +35,12 @@ function About() {
             <img src={laptopImg} alt="about" className="img-fluid" />
           </Col>
         </Row>
+        
+        <h1 className="project-heading">
+          <strong className="purple"> Coding </strong> Language Stack
+        </h1>
+        <Codestack />
+
         <h1 className="project-heading">
           Technique <strong className="purple">Stack </strong>
         </h1>
