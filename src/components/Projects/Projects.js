@@ -2,8 +2,8 @@ import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
-import chatify from "../../Assets/Projects/chatify.png";
-import bitsOfCode from "../../Assets/Projects/blog.png";
+import ssae from "../../Assets/Projects/ssae13x13.png";
+import openVehicleReid from "../../Assets/Projects/reid13x13.png";
 
 function Projects() {
   return (
@@ -16,7 +16,7 @@ function Projects() {
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={chatify}
+              imgPath={ssae}
               isBlog={false}
               title="SSAE"
               description="The source code of paper Discriminator‑Free Generative Adversarial Attack`"
@@ -26,7 +26,7 @@ function Projects() {
 
           <Col md={4} className="project-card">
             <ProjectCard
-              imgPath={bitsOfCode}
+              imgPath={openVehicleReid}
               isBlog={false}
               title="open vehicle reid"
               description="A benchmark framework of vehicle re-identification."

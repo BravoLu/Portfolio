@@ -12,15 +12,28 @@ function Toolstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <SiMacos />
+        <div className="tech-icon-container">
+          <a href="https://github.com/BravoLu/awesome_notes/blob/main/macos.md" target="_blank">
+          <SiMacos />
+          </a>
+          <span className="tech-icon-tooltip">MacOS</span>
+        </div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiGit />
+      <div className="tech-icon-container">
+          <a href="https://github.com/BravoLu/awesome_notes/blob/main/git.md" target="_blank">
+          <DiGit />
+          </a>
+          <span className="tech-icon-tooltip">Git</span>
+        </div>
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <a href="https://github.com/BravoLu/awesome_notes/blob/main/tmux.md" target="_blank">
-          <SiTmux />
-        </a>
+        <div className="tech-icon-container">
+          <a href="https://github.com/BravoLu/awesome_notes/blob/main/tmux.md" target="_blank">
+            <SiTmux />
+          </a>
+          <span className="tech-icon-tooltip">Tmux</span>
+        </div>
       </Col>
     </Row>
   );
