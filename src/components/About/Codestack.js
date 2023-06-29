@@ -12,7 +12,7 @@ function Codestack() {
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
       <div className="tech-icon-container">
-          <a href="https://github.com/BravoLu/awesome_notes/blob/main/C%2B%2B.md" target="_blank">
+          <a href="https://github.com/BravoLu/awesome_notes/blob/main/C%2B%2B.md" target="_blank" rel="noreferrer">
             <CgCPlusPlus />
           </a>
           <span className="tech-icon-tooltip">C++</span>
@@ -20,7 +20,7 @@ function Codestack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
       <div className="tech-icon-container">
-          <a href="https://github.com/BravoLu/awesome_notes/blob/main/js.md" target="_blank">
+          <a href="https://github.com/BravoLu/awesome_notes/blob/main/js.md" target="_blank" rel="noreferrer">
           <DiJavascript1 />
           </a>
           <span className="tech-icon-tooltip">Javascript</span>
@@ -28,7 +28,7 @@ function Codestack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
       <div className="tech-icon-container">
-          <a href="https://github.com/BravoLu/awesome_notes/blob/main/go.md" target="_blank">
+          <a href="https://github.com/BravoLu/awesome_notes/blob/main/go.md" target="_blank" rel="noreferrer">
           <TbBrandGolang />
           </a>
           <span className="tech-icon-tooltip">Golang</span>
@@ -36,7 +36,7 @@ function Codestack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
       <div className="tech-icon-container">
-          <a href="https://github.com/BravoLu/awesome_notes/blob/main/python.md" target="_blank">
+          <a href="https://github.com/BravoLu/awesome_notes/blob/main/python.md" target="_blank" rel="noreferrer">
             <DiPython />
           </a>
           <span className="tech-icon-tooltip">Python</span>

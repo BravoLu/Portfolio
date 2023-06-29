@@ -13,7 +13,7 @@ function Toolstack() {
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
         <div className="tech-icon-container">
-          <a href="https://github.com/BravoLu/awesome_notes/blob/main/macos.md" target="_blank">
+          <a href="https://github.com/BravoLu/awesome_notes/blob/main/macos.md" target="_blank" rel="noreferrer">
           <SiMacos />
           </a>
           <span className="tech-icon-tooltip">MacOS</span>
@@ -21,7 +21,7 @@ function Toolstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
       <div className="tech-icon-container">
-          <a href="https://github.com/BravoLu/awesome_notes/blob/main/git.md" target="_blank">
+          <a href="https://github.com/BravoLu/awesome_notes/blob/main/git.md" target="_blank" rel="noreferrer">
           <DiGit />
           </a>
           <span className="tech-icon-tooltip">Git</span>
@@ -29,7 +29,7 @@ function Toolstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <div className="tech-icon-container">
-          <a href="https://github.com/BravoLu/awesome_notes/blob/main/tmux.md" target="_blank">
+          <a href="https://github.com/BravoLu/awesome_notes/blob/main/tmux.md" target="_blank" rel="noreferrer">
             <SiTmux />
           </a>
           <span className="tech-icon-tooltip">Tmux</span>
