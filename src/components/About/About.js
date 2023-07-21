@@ -5,7 +5,7 @@ import Github from "./Github";
 import Codestack from "./Codestack"
 import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
-import laptopImg from "../../Assets/portrait2.jpeg";
+import laptopImg from "../../Assets/avatar.jpeg";
 import Toolstack from "./Toolstack";
 
 function About() {
