@@ -1,3 +1,4 @@
+// TODO: is it necessary to import react lib for each file?
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import {

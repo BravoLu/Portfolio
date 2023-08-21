@@ -1,0 +1,21 @@
+import { Container, Row, Col } from "react-bootstrap";
+import VideoCard from "./VideoCard";
+import YTPhoto from "../../Assets/Projects/YT1.jpg"
+
+
+function Video() {
+    return (
+        <Container fluid className="video-section">
+            <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
+                <Col md={4} className="video-card">
+                <VideoCard imgPath={YTPhoto}
+                    Title="Oneday hiking in Singapore."
+                    Desc="Oneday hiking in Singapore; From Spottiswoode 18 to Vivo City"                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          cccccccccccccccccccccccccccccccccccccccccccccx
+                    ghLink="https://www.youtube.com/watch?v=pZgChTbJIco"/>
+                </Col>
+            </Row>
+        </Container>
+    );
+}
+
+export default Video
