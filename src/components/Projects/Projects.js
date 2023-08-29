@@ -1,17 +1,22 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import Particle from "../Particle";
 import ssae from "../../Assets/Projects/ssae13x13.png";
 import openVehicleReid from "../../Assets/Projects/reid13x13.png";
 import Portfolio from "../../Assets/Projects/portfolio13x13.png"
+import text from "../../scripts.json"
+import { languageContext } from "../Button/LanguageButton";
+
 function Projects() {
+  const {language, togglelanguage} = useContext(languageContext);
+
   return (
     <Container fluid className="project-section">
       <Particle />
       <Container>
         <h1 className="project-heading">
-          My <strong className="purple">Awesome</strong> Public Projects
+          {text[language].projectheading}
         </h1>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
@@ -19,7 +24,7 @@ function Projects() {
               imgPath={ssae}
               isBlog={false}
               title="SSAE"
-              description="The source code of paper Discriminator‑Free Generative Adversarial Attack"
+              description={text[language].project1Desc}
               ghLink="https://github.com/BravoLu/SSAE"
             />
           </Col>
@@ -29,7 +34,7 @@ function Projects() {
               imgPath={openVehicleReid}
               isBlog={false}
               title="open vehicle reid"
-              description="A benchmark framework of vehicle re-identification."
+              description={text[language].project2Desc}
               ghLink="https://github.com/BravoLu/open-VehicleReID"
             />
           </Col>
@@ -39,7 +44,7 @@ function Projects() {
               imgPath={Portfolio}
               isBlog={false}
               title="Personal Website"
-              description="The personal website project."
+              description={text[language].project3Desc}
               ghLink="https://github.com/BravoLu/Portfolio"
             />
           </Col>

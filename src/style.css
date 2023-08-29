@@ -18,8 +18,21 @@ html {
   color: var(--imp-text-color) !important;
 }
 
+
 button:focus {
   box-shadow: none !important;
+}
+
+.button-padding {
+  padding: 10px;
+  /* color: #c81717; */
+}
+
+.fixed-size-button {
+  width: 100px; /* 设置按钮宽度 */
+  height: 40px; /* 设置按钮高度 */
+  padding: 20px;
+  /* 可以添加其他样式，如背景色、颜色、边框等 */
 }
 
 /* TODO: the function of !important  */
@@ -176,9 +189,11 @@ button:focus {
   }
 }
 
+/* 顶层工具栏 */
 .navbar-nav .nav-item {
   position: relative;
   margin-left: 20px;
+  width: 130px;
 }
 
 .navbar-nav .nav-item a {
@@ -459,7 +474,8 @@ button:focus {
   font-size: 2.3em !important;
   font-weight: 500 !important;
   padding-top: 10px !important;
-  padding-right: 1200px !important;
+  text-align: center !important;
+  padding-left: 50px !important;
 }
 
 .picture-card {
@@ -663,7 +679,7 @@ button:focus {
 .resume-section {
   position: relative !important;
   padding-top: 110px !important;
-  padding-bottom: 30px !important;
+  padding-bottom: 120px !important;
   background-image: var(--section-background-color) !important;
   color: white !important;
 }
@@ -823,6 +839,51 @@ button:focus {
 .video-section {
   position: relative !important;
   padding-top: 150px !important;
-  padding-bottom: 30px !important;
+  padding-bottom: 100px !important;
   background-image: var(--section-background-color) !important;
+}
+
+.custom-thumbnail {
+  width: 100px !important;/* Adjust the width as needed */
+  height: 100px !important; /* Adjust the height as needed */
+}
+
+.image-gallery-thumbnail img.custom-thumbnail {
+  /* Your custom styles here */
+  width: 100px !important;
+  height: 100px !important;
+}
+
+.picture-heading {
+  color: white !important;
+  font-size: 2.3em !important;
+  font-weight: 500 !important;
+  padding-top: 10px !important;
+  padding-bottom: 20px !important;
+  padding-right: 100px;
+}
+
+.clickable-svg {
+  padding: 8px;
+}
+
+.clickable-svg:hover {
+  fill: rgb(210, 158, 166); /* Change the fill color to blue on hover */
+  cursor: pointer; /* Change the cursor to a pointer on hover to indicate interactivity */
+  padding: 5px;
+}
+
+.clickable-svg-youtube {
+  padding: 8px;
+}
+
+.clickable-svg-youtube:hover {
+  fill: rgb(162, 12, 12);
+  padding: 5px;
+}
+
+/* Set a fixed height for each thumbnail */
+.image-gallery-thumbnail img {
+  height: 60px; /* Make sure the image fills the available height */
+  width: 100px;
 }

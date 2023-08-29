@@ -1,14 +1,13 @@
-import React, { useState } from "react";
-import Navbar from "react-bootstrap/Navbar";
-import Nav from "react-bootstrap/Nav";
+import React, { useContext, useState } from "react";
+import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import Container from "react-bootstrap/Container";
 // import logo from "../Assets/logo.png";
-import translations from '../language.json';
+import text from '../scripts.json';
 import Button from "react-bootstrap/Button";
+import { languageContext } from "./Button/LanguageButton";
 import { Link } from "react-router-dom";
-import { CgFolder, CgGitFork,CgYoutube } from "react-icons/cg";
+import { CgFolder, CgYoutube } from "react-icons/cg";
 import {
-  AiFillStar,
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
   AiOutlineUser,
@@ -20,11 +19,13 @@ function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
 
-  const [language, setLanguage] = useState('en'); // 默认语言是英文
+  const { language, toggleLanguage } = useContext(languageContext);
 
-  // 切换语言的函数
-  const toggleLanguage = () => {
-    setLanguage(language === 'en' ? 'zh' : 'en');
+  const [showDropdown, setShowDropdown] = useState(false);
+
+  // 处理下拉框的显示与隐藏
+  const toggleDropdown = () => {
+    setShowDropdown(!showDropdown);
   };
 
   function scrollHandler() {
@@ -62,7 +63,7 @@ function NavBar() {
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> {translations[language].home}
+                <AiOutlineHome style={{ marginBottom: "2px" }} /> {text[language].home}
               </Nav.Link>
             </Nav.Item>
 
@@ -72,11 +73,11 @@ function NavBar() {
                 to="/about"
                 onClick={() => updateExpanded(false)}
               >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> {translations[language].about}
+                <AiOutlineUser style={{ marginBottom: "2px" }} /> {text[language].about}
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item>
+            <Nav.Item className="">
               <Nav.Link
                 as={Link}
                 to="/project"
@@ -85,7 +86,7 @@ function NavBar() {
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
                 />{" "}
-                {translations[language].project}
+                {text[language].project}
               </Nav.Link>
             </Nav.Item>
 
@@ -95,7 +96,7 @@ function NavBar() {
                 to="/resume"
                 onClick={() => updateExpanded(false)}
               >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> {translations[language].resume}
+                <CgFileDocument style={{ marginBottom: "2px" }} /> {text[language].resume}
               </Nav.Link>
             </Nav.Item>
 
@@ -105,46 +106,56 @@ function NavBar() {
                 to="/blog"
                 onClick={() => updateExpanded(false)}
               >
-                <CgFolder style={{ marginBottom: "2px" }} /> {translations[language].blog}
+                <CgFolder style={{ marginBottom: "2px" }} /> {text[language].blog}
               </Nav.Link>
             </Nav.Item>
 
-
-            <Nav.Item>
-              <Nav.Link
+            <NavDropdown
+              title={text[language].picture}
+              id="basic-nav-dropdown"
+              show={showDropdown} // 控制下拉框的显示
+              onMouseEnter={toggleDropdown}
+              onMouseLeave={toggleDropdown}
+            >
+              <NavDropdown.Item
                 as={Link}
-                to="/Pictures"
+                to="/Pictures/xinjiang"
                 onClick={() => updateExpanded(false)}
-              >
-                <CgImage style={{ marginBottom: "2px" }} /> {translations[language].picture}
-              </Nav.Link>
-            </Nav.Item>
+              >{text[language].xinjiang}</NavDropdown.Item>
+              <NavDropdown.Divider />
+              <NavDropdown.Item
+                as={Link}
+                to="/Pictures/indonesia"
+                onClick={() => updateExpanded(false)}
+              >{text[language].indonesia}</NavDropdown.Item>
+              <NavDropdown.Item
+                as={Link}
+                to="/Pictures/thailand"
+                onClick={() => updateExpanded(false)}
+              >{text[language].thailand}</NavDropdown.Item>
+              <NavDropdown.Item
+                as={Link}
+                to="/Pictures/singapore"
+                onClick={() => updateExpanded(false)}
+              >{text[language].singapore}
+              </NavDropdown.Item>
+            </NavDropdown>
 
             <Nav.Item>
               <Nav.Link
-
                 as={Link}
                 to="/video"
                 onClick={() => updateExpanded(false)}
               >
-                <CgYoutube style={{ marginBottom: "2px" }} /> {translations[language].video}
+                <CgYoutube style={{ marginBottom: "2px" }} /> {text[language].video}
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item>
-              <Button
-                onClick={toggleLanguage}>{translations[language].language}</Button>
-            </Nav.Item>
-            {/* <Nav.Item className="fork-btn">
-              <Button
-                href="https://github.com/BravoLu/Portfolio"
-                target="_blank"
-                className="fork-btn-inner"
-              >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
+            <Nav.Item className="fork-btn">
+              <Button className="fixed-size-button" onClick={toggleLanguage}>
+                {text[language].language}
               </Button>
-            </Nav.Item> */}
+            </Nav.Item>
           </Nav>
         </Navbar.Collapse>
       </Container>

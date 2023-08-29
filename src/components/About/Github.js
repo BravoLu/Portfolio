@@ -1,12 +1,15 @@
-import React from "react";
+import React, {useContext} from "react";
 import GitHubCalendar from "react-github-calendar";
 import { Row } from "react-bootstrap";
+import text from "../../scripts.json"
+import { languageContext } from "../Button/LanguageButton";
 
 function Github() {
+  const { language, toggleLanguage } = useContext(languageContext);
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <h1 className="project-heading" style={{ paddingBottom: "20px" }}>
-        Days I <strong className="purple">Code</strong>
+        <strong className="purple">{text[language].dairy}</strong>
       </h1>
       <GitHubCalendar
         username="BravoLu"

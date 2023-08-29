@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useContext} from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Particle from "../Particle";
 import Github from "./Github";
@@ -7,8 +7,12 @@ import Techstack from "./Techstack";
 import Aboutcard from "./AboutCard";
 import laptopImg from "../../Assets/avatar.jpeg";
 import Toolstack from "./Toolstack";
+import { languageContext } from "../Button/LanguageButton";
+import text from "../../scripts.json"
 
 function About() {
+  const { language, toggleLanguage } = useContext(languageContext);
+
   return (
     <Container fluid className="about-section">
       <Particle />
@@ -23,7 +27,7 @@ function About() {
             }}
           >
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-              Brief <strong className="purple">Introduction</strong>
+               <strong className="purple">{text[language].introduction}</strong>
             </h1>
             <Aboutcard />
           </Col>
@@ -37,18 +41,18 @@ function About() {
         </Row>
         
         <h1 className="project-heading">
-          <strong className="purple"> Coding </strong> Language Stack
+          <strong className="purple">{text[language].coding}</strong>{text[language].stack}
         </h1>
         <Codestack />
 
         <h1 className="project-heading">
-          <strong className="purple">Technique </strong> Stack
+          <strong className="purple">{text[language].technique}</strong>{text[language].stack}
         </h1>
 
         <Techstack />
 
         <h1 className="project-heading">
-          <strong className="purple">Tools</strong> I use
+          <strong className="purple">{text[language].tools}</strong>{text[language].stack}
         </h1>
         <Toolstack />
 

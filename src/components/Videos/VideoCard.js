@@ -1,6 +1,8 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
+import BilibiliIcon from "../bilibiliIcon";
+import icon from "../../Assets/bilibili.svg"
 import { AiFillYoutube } from "react-icons/ai";
 
 function VideoCard(props) {
@@ -9,20 +11,24 @@ function VideoCard(props) {
             <Card.Img variant="top" src={props.imgPath} alt="card-img"></Card.Img>
             <Card.Body>
                 <Card.Title>{props.Title}</Card.Title>
-                <Card.Text style={{ textAlign: "justify" }}>
+                <Card.Text style={{ textAlign: "justify", height:"50px" }}>
                     {props.Desc}
                 </Card.Text>
-                {/* <Button variant="primary" href={props.ghLink} target="_blank">
-                    Watch
-                </Button> */}
+                { props.ytLink &&
                 <a
-                href="https://www.youtube.com/channel/UCklK7aT_dImwJhG3gAve1Pw"
-                style={{ color: "red" }}
-                target="_blank" 
-                rel="noopener noreferrer"
+                    href={props.ytLink}
+                    style={{ color: "red" }}
+                    target="_blank"
+                    rel="noopener noreferrer"
                 >
-                <AiFillYoutube />
+                    <AiFillYoutube size="50px" className="clickable-svg-youtube"/>
                 </a>
+                }
+                { props.bilibiliLink &&
+                <a href={props.bilibiliLink}>
+                    <BilibiliIcon className="clickable-svg"/>
+                </a>
+                }
             </Card.Body>
         </Card>
     )

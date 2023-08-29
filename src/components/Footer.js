@@ -1,20 +1,25 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import {
   AiFillGithub,
   AiOutlineTwitter,
   AiFillYoutube,
 } from "react-icons/ai";
+import XhsIcon from "./xhsicon";
+import BilibiliIcon from "./bilibiliIcon";
+import text from "../scripts.json"
+import { languageContext } from "./Button/LanguageButton";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Footer() {
   let date = new Date();
   let year = date.getFullYear();
+  const { language, toggleLanguage } = useContext(languageContext);
   return (
     <Container fluid className="footer">
       <Row>
         <Col md="4" className="footer-copywright">
-          <h3> <strong className="purple">"Investing yourself is one of the best investment!" </strong> - LU, Shaohao</h3>
+          <h3> <strong className="purple"> {text[language].slogan} </strong> - {text[language].name}</h3>
         </Col>
         <Col md="4" className="footer-copywright">
           <h3>Copyright © {year} BravoLu</h3>
@@ -25,7 +30,7 @@ function Footer() {
               <a
                 href="https://github.com/BravoLu"
                 style={{ color: "white" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <AiFillGithub />
@@ -35,7 +40,7 @@ function Footer() {
               <a
                 href="https://twitter.com/BravoLu30"
                 style={{ color: "lightblue" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <AiOutlineTwitter />
@@ -45,7 +50,7 @@ function Footer() {
               <a
                 href="https://www.linkedin.com/in/shaohao-lu-a6a307248/"
                 style={{ color: "lightblue" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
               >
                 <FaLinkedinIn />
@@ -55,10 +60,30 @@ function Footer() {
               <a
                 href="https://www.youtube.com/channel/UCklK7aT_dImwJhG3gAve1Pw"
                 style={{ color: "red" }}
-                target="_blank" 
+                target="_blank"
                 rel="noopener noreferrer"
               >
-                <AiFillYoutube />
+                <AiFillYoutube/>
+              </a>
+            </li>
+            <li className="social-icons">
+              <a
+                href="https://www.xiaohongshu.com/user/profile/5ceb4de00000000011033330"
+                style={{ color: "red" }}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <XhsIcon height="12px" width="12px"/>
+              </a>
+            </li>
+            <li className="social-icons">
+              <a
+                href="https://space.bilibili.com/23479501/video"
+                style={{ color: "red" }}
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <BilibiliIcon height="18px" width="18px"/>
               </a>
             </li>
           </ul>
