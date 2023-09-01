@@ -31,7 +31,6 @@ button:focus {
 .fixed-size-button {
   width: 100px; /* 设置按钮宽度 */
   height: 40px; /* 设置按钮高度 */
-  padding: 20px;
   /* 可以添加其他样式，如背景色、颜色、边框等 */
 }
 
@@ -158,7 +157,7 @@ button:focus {
 @media (max-width: 767px) {
   .navbar {
     padding: 1rem 2rem !important;
-    font-size: 1.4rem !important;
+    font-size: 1.2rem !important;
     background-color: #181a27 !important;
   }
   .navbar-nav .nav-item a::after {
