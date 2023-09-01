@@ -103,7 +103,7 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/blog"
+                to="/page"
                 onClick={() => updateExpanded(false)}
               >
                 <CgFolder style={{ marginBottom: "2px" }} /> {text[language].blog}

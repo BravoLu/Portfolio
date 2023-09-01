@@ -41,7 +41,7 @@
       "project1Desc": "The source code of paper Discriminator‑Free Generative Adversarial Attack",
       "project2Desc": "A benchmark framework of vehicle re-identification.",
       "project3Desc": "The personal website project.",
-      "download": "Download"
+      "resumeheading": "Personal Resume"
     },
     "zh": {
       "a": "一位",
@@ -85,7 +85,8 @@
       "project1Desc": "ACM'21论文《Discriminator‑Free Generative Adversarial Attack》的源码",
       "project2Desc": "一款辅助车辆重识别研究的可视化工具源码",
       "project3Desc": "个人站源码",
-      "download": "下载"
+      "download": "下载",
+      "resumeheading": "个人简历"
     }
   }
   

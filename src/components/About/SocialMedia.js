@@ -16,7 +16,7 @@ function SocialMedia() {
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={3} className="tech-icons">
         <div className="tech-icon-container">
-          <a href="https://github.com/BravoLu/awesome_notes/blob/main/macos.md" target="_blank" rel="noreferrer">
+          <a href="https://github.com/BravoLu" target="_blank" rel="noreferrer">
           <AiFillGithub fill="white"/>
           </a>
           <span className="tech-icon-tooltip">Github</span>
@@ -24,7 +24,7 @@ function SocialMedia() {
       </Col>
       <Col xs={4} md={3} className="tech-icons">
         <div className="tech-icon-container">
-          <a href="https://github.com/BravoLu/awesome_notes/blob/main/macos.md" target="_blank" rel="noreferrer">
+          <a href="https://twitter.com/BravoLu30" target="_blank" rel="noreferrer">
           <AiOutlineTwitter fill="blue"/>
           </a>
           <span className="tech-icon-tooltip">Twitter</span>
@@ -32,7 +32,7 @@ function SocialMedia() {
       </Col>
       <Col xs={4} md={3} className="tech-icons">
         <div className="tech-icon-container">
-          <a href="https://github.com/BravoLu/awesome_notes/blob/main/macos.md" target="_blank" rel="noreferrer">
+          <a href="https://www.youtube.com/channel/UCklK7aT_dImwJhG3gAve1Pw" target="_blank" rel="noreferrer">
           <AiFillYoutube fill="red"/>
           </a>
           <span className="tech-icon-tooltip">Youtube</span>
@@ -40,7 +40,7 @@ function SocialMedia() {
       </Col>
       <Col xs={4} md={3} className="tech-icons">
         <div className="tech-icon-container">
-          <a href="https://github.com/BravoLu/awesome_notes/blob/main/macos.md" target="_blank" rel="noreferrer">
+          <a href="https://www.linkedin.com/in/shaohao-lu-a6a307248/" target="_blank" rel="noreferrer">
           <FaLinkedinIn />
           </a>
           <span className="tech-icon-tooltip">Linkedin</span>
@@ -48,7 +48,7 @@ function SocialMedia() {
       </Col>
       <Col xs={4} md={3} className="tech-icons">
         <div className="tech-icon-container">
-          <a href="https://github.com/BravoLu/awesome_notes/blob/main/macos.md" target="_blank" rel="noreferrer">
+          <a href="https://space.bilibili.com/23479501/video" target="_blank" rel="noreferrer">
           <BilibiliIcon height="60px" width="60px"/>
           </a>
           <span className="tech-icon-tooltip">Bilibili</span>
@@ -56,7 +56,7 @@ function SocialMedia() {
       </Col>
       <Col xs={4} md={3} className="tech-icons">
         <div className="tech-icon-container">
-          <a href="https://github.com/BravoLu/awesome_notes/blob/main/macos.md" target="_blank" rel="noreferrer">
+          <a href="https://www.xiaohongshu.com/user/profile/5ceb4de00000000011033330" target="_blank" rel="noreferrer">
           <XhsIcon height="60px" width="60px"/>
           </a>
           <span className="tech-icon-tooltip">小红书</span>
