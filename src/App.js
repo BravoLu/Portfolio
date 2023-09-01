@@ -8,7 +8,6 @@ import Projects from "./components/Projects/Projects";
 import Footer from "./components/Footer";
 import Resume from "./components/Resume/Resume";
 import MyGallery from "./components/Pictures/Pictures";
-import Page from "./components/Blog/Blog";
 import {
   BrowserRouter as Router,
   Route,
@@ -38,7 +37,6 @@ function App() {
       <Router>
         <Preloader load={load} />
         <div className="App" id={load ? "no-scroll" : "scroll"}>
-
           <NavBar />
           <ScrollToTop />
           <Routes>
@@ -46,7 +44,6 @@ function App() {
             <Route path="/project" element={<Projects />} />
             <Route path="/about" element={<About />} />
             <Route path="/resume" element={<Resume />} />
-            <Route path="/page" element={<Page />} />
             <Route path="/pictures/xinjiang" element={<MyGallery dir="xinjiang"/>} />
             <Route path="/pictures/indonesia" element={<MyGallery dir="indonesia"/>} />
             <Route path="/pictures/singapore" element={<MyGallery dir="singapore"/>} />

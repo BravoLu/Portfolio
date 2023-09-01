@@ -102,9 +102,9 @@ function NavBar() {
 
             <Nav.Item>
               <Nav.Link
-                as={Link}
-                to="/page"
-                onClick={() => updateExpanded(false)}
+                href="https://bravolu.vercel.app/"
+                target="_blank"
+                rel="noreferrer"
               >
                 <CgFolder style={{ marginBottom: "2px" }} /> {text[language].blog}
               </Nav.Link>
@@ -112,10 +112,10 @@ function NavBar() {
 
             <NavDropdown
               title={text[language].picture}
-              id="basic-nav-dropdown"
               show={showDropdown} // 控制下拉框的显示
               onMouseEnter={toggleDropdown}
               onMouseLeave={toggleDropdown}
+              className="custom-dropdown"
             >
               <NavDropdown.Item
                 as={Link}

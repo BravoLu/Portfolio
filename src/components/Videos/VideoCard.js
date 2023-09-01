@@ -1,14 +1,12 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import Button from "react-bootstrap/Button";
 import BilibiliIcon from "../bilibiliIcon";
-import icon from "../../Assets/bilibili.svg"
 import { AiFillYoutube } from "react-icons/ai";
 
 function VideoCard(props) {
     return (
         <Card className="video-card-view">
-            <Card.Img variant="top" src={props.imgPath} alt="card-img"></Card.Img>
+            <Card.Img variant="top" src={props.imgPath} alt="video-cover"></Card.Img>
             <Card.Body>
                 <Card.Title>{props.Title}</Card.Title>
                 <Card.Text style={{ textAlign: "justify", height:"50px" }}>

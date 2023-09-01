@@ -1,8 +1,8 @@
 html {
   --section-background-color: linear-gradient(
     to bottom left,
-    rgba(17, 16, 16, 0.582),
-    rgba(12, 8, 24, 0.904)
+    rgba(249, 246, 246, 0.986),
+    rgba(236, 234, 243, 0.904)
   );
 
   --image-gradient: linear-gradient(
@@ -101,6 +101,7 @@ button:focus {
   transition: all 0.3s ease-out 0s !important;
   padding: 0.3rem 2rem !important;
   font-size: 1.2rem !important;
+  background-color: black;
 }
 
 .navbar-toggler {
@@ -221,6 +222,12 @@ button:focus {
   width: 100%;
 }
 
+.dropdown-toggle::after {
+  border-left: 0.0em solid black !important;
+  border-right:  0.0em solid black !important;
+  color: #f5a85b !important;
+}
+
 /* --------- */
 /* Home section */
 /* --------- */
@@ -273,7 +280,8 @@ button:focus {
 .home-section {
   position: relative;
   z-index: -1;
-  background-image: var(--image-gradient), url(./Assets/home-bg.jpg);
+  /* background-image: var(--image-gradient), url(./Assets/home-bg.jpg); */
+  background-color: black !important;
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 30px !important;
@@ -281,8 +289,8 @@ button:focus {
 }
 
 .home-content {
-  padding: 9rem 0 2rem !important;
-  color: whitesmoke;
+  padding: 9rem 0 9rem !important;
+  color: white !important;
   text-align: left;
 }
 
@@ -466,7 +474,7 @@ button:focus {
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 80px !important;
-  background-image: var(--section-background-color) !important;
+  background-color: black !important;
 }
 
 .picture-heading {
@@ -492,8 +500,8 @@ button:focus {
 .project-section {
   position: relative !important;
   padding-top: 150px !important;
-  padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
+  padding-bottom: 80px !important;
+  background-color: black !important;
 }
 
 .project-card {
@@ -540,48 +548,20 @@ button:focus {
   box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
 }
 
-.blog-section {
-  position: relative !important;
-  padding-top: 150px !important;
-  padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
-}
-
-.blog-card {
-  padding-top: 50px !important;
-  padding-bottom: 50px !important;
-  padding-left: 25px !important;
-  padding-right: 25px !important;
-  height: auto !important;
-}
-
-.blog-card-view {
-  background-color: transparent !important;
-  box-shadow: 0 3px 3px 2px rgba(145, 77, 161, 0.459) !important;
-  color: white !important;
-  transition: all 0.5s ease 0s !important;
-  height: 100% !important;
-}
-
-.blog-link {
-  color: white !important;
-  text-decoration: none !important;
-}
-
-.blog-link:hover {
-  cursor: pointer !important;
-}
-
-.blog-card-view:hover {
-  transform: scale(1.02) !important;
-  overflow: hidden !important;
-  box-shadow: 0 3px 3px 5px rgba(155, 88, 173, 0.65) !important;
-}
-
 .card-img-top {
   padding: 20px !important;
   opacity: 0.8 !important;
   border-radius: 10px !important;
+  height: 220px !important;
+  width: 380px !important;
+}
+
+.video-cover-top {
+  padding: 20px !important;
+  opacity: 0.8 !important;
+  border-radius: 10px !important;
+  height: 220px !important;
+  width: 440px !important;
 }
 
 .blog-img {
@@ -620,8 +600,9 @@ button:focus {
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 30px !important;
-  background-image: var(--section-background-color) !important;
-  color: white !important;
+  /* background-image: var(--section-background-color) !important; */
+  background-color: black;
+  color: black !important;
 }
 
 .tech-icons {
@@ -680,7 +661,7 @@ button:focus {
   position: relative !important;
   padding-top: 110px !important;
   padding-bottom: 120px !important;
-  background-image: var(--section-background-color) !important;
+  background-color: black !important;
   color: white !important;
 }
 
@@ -840,7 +821,7 @@ button:focus {
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 100px !important;
-  background-image: var(--section-background-color) !important;
+  background-color: black !important;
 }
 
 .custom-thumbnail {
