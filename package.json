@@ -44,5 +44,8 @@
     "not dead",
     "not op_mini all"
   ],
-  "devDependencies": {}
+  "devDependencies": {},
+  "engines": {
+    "node": "16.x"
+  }
 }
