@@ -12,7 +12,7 @@ function AboutCard() {
     <Card className="quote-card-view">
       <Card.Body>
         <blockquote className="blockquote mb-0">
-          {language == "en" &&
+          {language === "en" &&
             <p style={{ textAlign: "justify" }}>
               Hi, I am <span className="purple">LU, Shaohao </span>
               from <span className="purple"> Zhuhai, Guangdong, China.</span> I am a both software engineer and algorithm engineer.
@@ -24,7 +24,7 @@ function AboutCard() {
             </p>
           }
           {
-            language == "zh" &&
+            language === "zh" &&
             <p style={{ textAlign: "justify" }}>
               嗨，我是<span className="purple">卢少豪</span>, 来自<span className="purple">中国广东珠海</span>。 我是一位软件工程师兼算法工程师.
               我在<span className="purple">中山大学</span>获得学士和硕士学位。这个个人站是我用来分享我日常生活，学习，旅游过程中的文字，图片，视频，记录我一步步成长的脚步。
@@ -49,8 +49,8 @@ function AboutCard() {
           </ul>
           <h2> <span className="purple">{text[language].socialmedia}</span> </h2>
           <div> 
-           {language == "en" && <p>If you're interested in me, feel free to contact me on:</p>}
-           {language == "zh" && <p>你可以通过以下社交媒体联系我：</p>}
+           {language === "en" && <p>If you're interested in me, feel free to contact me on:</p>}
+           {language === "zh" && <p>你可以通过以下社交媒体联系我：</p>}
           </div>
           <SocialMedia />
           {/* <p style={{ color: "rgb(155 126 172)" }}>
