@@ -6,10 +6,10 @@ import text from "../../scripts.json"
 import SocialMedia from "./SocialMedia";
 
 function AboutCard() {
-  const { language, toggleLanguage } = useContext(languageContext);
+  const { language } = useContext(languageContext);
 
   return (
-    <Card className="quote-card-view">
+    <Card className="about-card-view">
       <Card.Body>
         <blockquote className="blockquote mb-0">
           {language === "en" &&

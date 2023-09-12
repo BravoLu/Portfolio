@@ -5,7 +5,7 @@ import text from "../../scripts.json"
 import { languageContext } from "../Button/LanguageButton";
 
 function Github() {
-  const { language, toggleLanguage } = useContext(languageContext);
+  const { language } = useContext(languageContext);
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <h1 className="project-heading" style={{ paddingBottom: "20px" }}>

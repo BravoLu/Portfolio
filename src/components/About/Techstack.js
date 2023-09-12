@@ -1,5 +1,6 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
+import Icon from "./Icon.js"
+import { Row } from "react-bootstrap";
 import {
   DiReact,
   DiNodejs,
@@ -21,110 +22,84 @@ import {
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <Col xs={4} md={2} className="tech-icons">
-        <div className="tech-icon-container">
-          <a href="https://github.com/BravoLu/awesome_notes/blob/main/nodejs.md" target="_blank" rel="noreferrer">
-            <DiNodejs />
-          </a>
-          <span className="tech-icon-tooltip">Nodejs</span>
-        </div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <div className="tech-icon-container">
-          <a href="https://github.com/BravoLu/awesome_notes/blob/main/react.md" target="_blank" rel="noreferrer">
-            <DiReact />
-          </a>
-          <span className="tech-icon-tooltip">React</span>
-        </div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <div className="tech-icon-container">
-          <a href="https://github.com/BravoLu/awesome_notes/blob/main/k8s.md" target="_blank" rel="noreferrer">
-            <SiKubernetes />
-          </a>
-          <span className="tech-icon-tooltip">Kubernetes</span>
-        </div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <div className="tech-icon-container">
-          <a href="https://github.com/BravoLu/awesome_notes/blob/main/promethues.md" target="_blank" rel="noreferrer">
-            <SiPrometheus />
-          </a>
-          <span className="tech-icon-tooltip">Promethues</span>
-        </div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <div className="tech-icon-container">
-          <a href="https://github.com/BravoLu/awesome_notes/blob/main/jenkins.md" target="_blank" rel="noreferrer">
-            <SiJenkins />
-          </a>
-          <span className="tech-icon-tooltip">Jenkins</span>
-        </div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <div className="tech-icon-container">
-          <a href="https://github.com/BravoLu/awesome_notes/blob/main/redis.md" target="_blank" rel="noreferrer">
-            <SiRedis />
-          </a>
-          <span className="tech-icon-tooltip">Redis</span>
-        </div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <div className="tech-icon-container">
-          <a href="https://github.com/BravoLu/awesome_notes/blob/main/grafana.md" target="_blank" rel="noreferrer">
-            <SiGrafana />
-          </a>
-          <span className="tech-icon-tooltip">Grafana</span>
-        </div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <div className="tech-icon-container">
-          <a href="https://github.com/BravoLu/awesome_notes/blob/main/kibana.md" target="_blank" rel="noreferrer">
-          <SiKibana />
-          </a>
-          <span className="tech-icon-tooltip">Kibana</span>
-        </div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <div className="tech-icon-container">
-          <a href="https://github.com/BravoLu/awesome_notes/blob/main/logstash.md" target="_blank" rel="noreferrer">
-            <SiLogstash />
-          </a>
-        <span className="tech-icon-tooltip">logstash</span>
-        </div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <div className="tech-icon-container">
-          <a href="https://github.com/BravoLu/awesome_notes/blob/main/elasticsearch.md" target="_blank" rel="noreferrer">
-            <SiElasticsearch />
-          </a>
-          <span className="tech-icon-tooltip">Elasticsearch</span>
-        </div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <div className="tech-icon-container">
-          <a href="https://github.com/BravoLu/awesome_notes/blob/main/nginx.md" target="_blank" rel="noreferrer">
-            <SiNginx />
-          </a>
-          <span className="tech-icon-tooltip">Nginx</span>
-        </div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <div className="tech-icon-container">
-          <a href="https://github.com/BravoLu/awesome_notes/blob/main/etcd.md" target="_blank" rel="noreferrer">
-            <SiEtcd />
-          </a>
-          <span className="tech-icon-tooltip">Etcd</span>
-        </div>
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <div className="tech-icon-container">
-          <a href="https://github.com/BravoLu/awesome_notes/blob/main/mysql.md" target="_blank" rel="noreferrer">
-            <SiMysql />
-          </a>
-          <span className="tech-icon-tooltip">Mysql</span>
-        </div>
-      </Col>
+      <Icon
+        icon={(props) => <DiNodejs {...props} />}
+        color="#42f54e"
+        url="https://github.com/BravoLu/awesome_notes/blob/main/nodejs.md"
+        text="Nodejs"
+      />
+      <Icon
+        icon={(props) => <DiReact {...props} />}
+        color="#42f5ec"
+        url="https://github.com/BravoLu/awesome_notes/blob/main/react.md"
+        text="React"
+      />
+      <Icon
+        icon={(props) => <SiKubernetes {...props} />}
+        color="#4272f5"
+        url="https://github.com/BravoLu/awesome_notes/blob/main/k8s.md"
+        text="Kubernetes"
+      />
+      <Icon
+        icon={(props) => <SiPrometheus {...props} />}
+        color="#f57842"
+        url="https://github.com/BravoLu/awesome_notes/blob/main/promethues.md"
+        text="Promethues"
+      />
+      <Icon
+        icon={(props) => <SiJenkins {...props} />}
+        color="red"
+        url="https://github.com/BravoLu/awesome_notes/blob/main/jenkins.md"
+        text="Jenkins"
+      />
+      <Icon
+        icon={(props) => <SiRedis {...props} />}
+        color="red"
+        url="https://github.com/BravoLu/awesome_notes/blob/main/redis.md"
+        text="Redis"
+      />
+      <Icon
+        icon={(props) => <SiGrafana {...props} />}
+        color="#f58142"
+        url="https://github.com/BravoLu/awesome_notes/blob/main/grafana.md"
+        text="Grafana"
+      />
+      <Icon
+        icon={(props) => <SiKibana {...props} />}
+        color="#f542e6"
+        url="https://github.com/BravoLu/awesome_notes/blob/main/kibana.md"
+        text="Kibana"
+      />
+      <Icon
+        icon={(props) => <SiLogstash {...props} />}
+        color="yellow"
+        url="https://github.com/BravoLu/awesome_notes/blob/main/logstash.md"
+        text="logstash"
+      />
+      <Icon
+        icon={(props) => <SiElasticsearch {...props} />}
+        color="#3a3d3b"
+        url="https://github.com/BravoLu/awesome_notes/blob/main/elasticsearch.md"
+        text="Elasticsearch"
+      />
+      <Icon
+        icon={(props) => <SiNginx {...props} />}
+        color="green"
+        url="https://github.com/BravoLu/awesome_notes/blob/main/nginx.md"
+        text="Nginx"
+      />
+      <Icon
+        icon={(props) => <SiEtcd {...props} />}
+        color="white"
+        url="https://github.com/BravoLu/awesome_notes/blob/main/etcd.md"
+        text="Etcd"
+      />
+      <Icon
+        icon={(props) => <SiMysql {...props} />}
+        color="#fc7f03"
+        url="https://github.com/BravoLu/awesome_notes/blob/main/mysql.md"
+        text="Mysql"
+      />
     </Row>
   );
 }

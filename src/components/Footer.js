@@ -14,7 +14,7 @@ import { FaLinkedinIn } from "react-icons/fa";
 function Footer() {
   let date = new Date();
   let year = date.getFullYear();
-  const { language, toggleLanguage } = useContext(languageContext);
+  const { language } = useContext(languageContext);
   return (
     <Container fluid className="footer">
       <Row>
@@ -39,7 +39,7 @@ function Footer() {
             <li className="social-icons">
               <a
                 href="https://twitter.com/BravoLu30"
-                style={{ color: "lightblue" }}
+                style={{ color: "blue" }}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -69,7 +69,6 @@ function Footer() {
             <li className="social-icons">
               <a
                 href="https://www.xiaohongshu.com/user/profile/5ceb4de00000000011033330"
-                style={{ color: "red" }}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -79,7 +78,6 @@ function Footer() {
             <li className="social-icons">
               <a
                 href="https://space.bilibili.com/23479501/video"
-                style={{ color: "red" }}
                 target="_blank"
                 rel="noopener noreferrer"
               >

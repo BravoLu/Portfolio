@@ -1,7 +1,6 @@
 import React, { useContext } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
-import Particle from "../Particle";
 import ssae from "../../Assets/Projects/ssae13x13.png";
 import openVehicleReid from "../../Assets/Projects/reid13x13.png";
 import Portfolio from "../../Assets/Projects/website.jpeg"
@@ -9,11 +8,10 @@ import text from "../../scripts.json"
 import { languageContext } from "../Button/LanguageButton";
 
 function Projects() {
-  const {language, togglelanguage} = useContext(languageContext);
+  const {language} = useContext(languageContext);
 
   return (
     <Container fluid className="project-section">
-      <Particle />
       <Container>
         <h1 className="project-heading">
           {text[language].projectheading}

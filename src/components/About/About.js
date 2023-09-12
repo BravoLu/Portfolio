@@ -1,6 +1,5 @@
 import React, {useContext} from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import Particle from "../Particle";
 import Github from "./Github";
 import Codestack from "./Codestack"
 import Techstack from "./Techstack";
@@ -11,11 +10,10 @@ import { languageContext } from "../Button/LanguageButton";
 import text from "../../scripts.json"
 
 function About() {
-  const { language, toggleLanguage } = useContext(languageContext);
+  const { language } = useContext(languageContext);
 
   return (
-    <Container fluid className="about-section">
-      <Particle />
+    <Container className="about-section">
       <Container>
         <Row style={{ justifyContent: "center", padding: "10px" }}>
           <Col
@@ -33,7 +31,6 @@ function About() {
           </Col>
           <Col
             md={5}
-            style={{ paddingTop: "120px", paddingBottom: "50px" }}
             className="about-img"
           >
             <img src={laptopImg} alt="about" className="img-fluid" />

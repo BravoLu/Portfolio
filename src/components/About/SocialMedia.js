@@ -1,7 +1,6 @@
 // TODO: is it necessary to import react lib for each file?
 import React from "react";
-import { ImPointRight } from "react-icons/im";
-import { Container, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 import {
   AiFillGithub,
   AiOutlineTwitter,

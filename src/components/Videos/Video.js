@@ -1,7 +1,6 @@
 import React from "react"
 import { Container, Row, Col } from "react-bootstrap";
 import VideoCard from "./VideoCard";
-import Particle from "../Particle";
 import YTPhoto from "../../Assets/Projects/YT1.jpg"
 import cover1 from "../../Assets/Projects/videos/cover1.jpg"
 import mabaoguo from "../../Assets/Projects/mabaoguo_cover.jpg"
@@ -10,7 +9,6 @@ import mabaoguo from "../../Assets/Projects/mabaoguo_cover.jpg"
 function Video() {
     return (
         <Container fluid className="video-section">
-            <Particle />
             <Container>
                 <h1 className="project-heading">English Channel</h1>
                 <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>

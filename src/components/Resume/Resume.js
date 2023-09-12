@@ -1,7 +1,6 @@
 import React, { useState, useEffect, useContext } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
-import Particle from "../Particle";
 import pdfZH from "../../Assets/bravolu_cv.pdf";
 import pdfCN from "../../Assets/bravolu_cv_cn.pdf"
 import { AiOutlineDownload } from "react-icons/ai";
@@ -12,7 +11,7 @@ import text from "../../scripts.json"
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
 function Resume() {
-  const { language, togglelanguage } = useContext(languageContext);
+  const { language } = useContext(languageContext);
   const [width, setWidth] = useState(1200);
 
   useEffect(() => {
@@ -22,7 +21,6 @@ function Resume() {
     <div>
       <Container fluid className="resume-section">
         <h1>{text[language].resume}</h1>
-        <Particle />
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Col md={5}>
             <Button

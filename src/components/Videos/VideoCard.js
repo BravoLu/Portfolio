@@ -5,7 +5,7 @@ import { AiFillYoutube } from "react-icons/ai";
 
 function VideoCard(props) {
     return (
-        <Card className="video-card-view">
+        <Card className="card-view">
             <Card.Img variant="top" src={props.imgPath} alt="video-cover"></Card.Img>
             <Card.Body>
                 <Card.Title>{props.Title}</Card.Title>

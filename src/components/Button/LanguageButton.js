@@ -1,7 +1,5 @@
 // File1.js
 import React, { createContext, useState } from 'react';
-import Button from "react-bootstrap/Button";
-import text from '../../scripts.json';
 
 const languageContext = createContext();
 

@@ -1,17 +1,14 @@
 import React, { useContext } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import homeLogo from "../../Assets/avatar-home.png";
-import Particle from "../Particle";
 import Type from "./Type";
 import text from '../../scripts.json';
 import { languageContext } from "../Button/LanguageButton";
 
 function Home() {
-  const { language, toggleLanguage } = useContext(languageContext);
+  const { language } = useContext(languageContext);
   return (
-    <section>
       <Container fluid className="home-section" id="home">
-        <Particle />
         <Container className="home-content">
           <Row>
             <Col md={7} className="home-header">
@@ -42,7 +39,6 @@ function Home() {
           </Row>
         </Container>
       </Container>
-    </section>
   );
 }
 

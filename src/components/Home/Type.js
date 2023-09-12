@@ -4,7 +4,7 @@ import text from '../../scripts.json';
 import {languageContext} from "../Button/LanguageButton";
 
 function Type() {
-  const {language, toggleLanguage} = useContext(languageContext);
+  const {language} = useContext(languageContext);
 
   return (
     <Typewriter
