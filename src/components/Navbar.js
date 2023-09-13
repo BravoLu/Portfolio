@@ -1,12 +1,12 @@
 import React, { useContext, useState } from "react";
 import { Navbar, Nav, NavDropdown } from 'react-bootstrap';
 import Container from "react-bootstrap/Container";
-// import logo from "../Assets/logo.png";
 import text from '../scripts.json';
 import Button from "react-bootstrap/Button";
 import { languageContext } from "./Button/LanguageButton";
 import { Link } from "react-router-dom";
-import { CgFolder, CgYoutube } from "react-icons/cg";
+import { CgImage, CgYoutube } from "react-icons/cg";
+import NotionIcon from "./Icon/notion";
 import {
   AiOutlineHome,
   AiOutlineFundProjectionScreen,
@@ -14,6 +14,7 @@ import {
 } from "react-icons/ai";
 
 import { CgFileDocument } from "react-icons/cg";
+import GSWIcon from "./Icon/gswIcon";
 
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
@@ -59,59 +60,57 @@ function NavBar() {
           <span></span>
           <span></span>
         </Navbar.Toggle>
+        <GSWIcon />
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
               <Nav.Link as={Link} to="/" onClick={() => updateExpanded(false)}>
-                <AiOutlineHome style={{ marginBottom: "2px" }} /> {text[language].home}
+                <AiOutlineHome className="nav-icon" />
+                <span className="nav-text">
+                  {text[language].home}
+                </span>
+              </Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+              <Nav.Link as={Link} to="/about" onClick={() => updateExpanded(false)}>
+                <AiOutlineUser className="nav-icon" />
+                <span className="nav-text">
+                  {text[language].about}
+                </span>
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/about"
-                onClick={() => updateExpanded(false)}
-              >
-                <AiOutlineUser style={{ marginBottom: "2px" }} /> {text[language].about}
-              </Nav.Link>
-            </Nav.Item>
-
-            <Nav.Item className="">
-              <Nav.Link
-                as={Link}
-                to="/project"
-                onClick={() => updateExpanded(false)}
-              >
-                <AiOutlineFundProjectionScreen
-                  style={{ marginBottom: "2px" }}
-                />{" "}
-                {text[language].project}
+              <Nav.Link as={Link} to="/project" onClick={() => updateExpanded(false)}>
+                <AiOutlineFundProjectionScreen className="nav-icon" />
+                <span className="nav-text">
+                  {text[language].project}
+                </span>
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/resume"
-                onClick={() => updateExpanded(false)}
-              >
-                <CgFileDocument style={{ marginBottom: "2px" }} /> {text[language].resume}
+              <Nav.Link as={Link} to="/resume" onClick={() => updateExpanded(false)}>
+                <CgFileDocument className="nav-icon" />
+                <span className="nav-text">
+                  {text[language].resume}
+                </span>
               </Nav.Link>
             </Nav.Item>
 
             <Nav.Item>
-              <Nav.Link
-                href="https://bravolu.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <CgFolder style={{ marginBottom: "2px" }} /> {text[language].blog}
+              <Nav.Link href="https://bravolu.vercel.app/" target="_blank" rel="noreferrer">
+                <NotionIcon className="nav-icon" />
+                <span className="nav-text">
+                  {text[language].blog}
+                </span>
               </Nav.Link>
             </Nav.Item>
 
             <NavDropdown
-              title={text[language].picture}
+              title={
+                <><CgImage className="nav-icon" /><span className="nav-text">{text[language].picture}</span></>
+              }
               show={showDropdown} // 控制下拉框的显示
               onMouseEnter={toggleDropdown}
               onMouseLeave={toggleDropdown}
@@ -121,33 +120,36 @@ function NavBar() {
                 as={Link}
                 to="/Pictures/xinjiang"
                 onClick={() => updateExpanded(false)}
+                className="navdropdown-item"
               >{text[language].xinjiang}</NavDropdown.Item>
               <NavDropdown.Divider />
               <NavDropdown.Item
                 as={Link}
                 to="/Pictures/indonesia"
                 onClick={() => updateExpanded(false)}
+                className="navdropdown-item"
               >{text[language].indonesia}</NavDropdown.Item>
               <NavDropdown.Item
                 as={Link}
                 to="/Pictures/thailand"
                 onClick={() => updateExpanded(false)}
+                className="navdropdown-item"
               >{text[language].thailand}</NavDropdown.Item>
               <NavDropdown.Item
                 as={Link}
                 to="/Pictures/singapore"
                 onClick={() => updateExpanded(false)}
+                className="navdropdown-item"
               >{text[language].singapore}
               </NavDropdown.Item>
             </NavDropdown>
 
             <Nav.Item>
-              <Nav.Link
-                as={Link}
-                to="/video"
-                onClick={() => updateExpanded(false)}
-              >
-                <CgYoutube style={{ marginBottom: "2px" }} /> {text[language].video}
+              <Nav.Link as={Link} to="/video" onClick={() => updateExpanded(false)}>
+                <CgYoutube className="nav-icon" />
+                <span className="nav-text">
+                  {text[language].video}
+                </span>
               </Nav.Link>
             </Nav.Item>
 

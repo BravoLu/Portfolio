@@ -20,7 +20,7 @@ function Home() {
               </h1>
               <h1 className="heading-name">
                 {text[language].im}
-                <strong className="main-name"> {text[language].name} </strong>
+                <strong className="goldenYellow"> {text[language].name} </strong>
               </h1>
               <h1 style={{ paddingTop: 40, paddingLeft: 50, textAlign: "left" }}>{text[language].a}</h1>
               <div style={{ paddingLeft: 50, textAlign: "left" }}>

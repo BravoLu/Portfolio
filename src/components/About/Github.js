@@ -8,14 +8,14 @@ function Github() {
   const { language } = useContext(languageContext);
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
-      <h1 className="project-heading" style={{ paddingBottom: "20px" }}>
-        <strong className="purple">{text[language].dairy}</strong>
+      <h1 className="goldenYellow" style={{ paddingBottom: "20px" }}>
+        <strong className="goldenYellow">{text[language].dairy}</strong>
       </h1>
       <GitHubCalendar
         username="BravoLu"
         blockSize={15}
         blockMargin={5}
-        color="#c084f5"
+        color="#FDB927"
         fontSize={16}
       />
     </Row>

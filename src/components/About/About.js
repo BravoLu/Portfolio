@@ -13,7 +13,7 @@ function About() {
   const { language } = useContext(languageContext);
 
   return (
-    <Container className="about-section">
+    <Container fluid className="about-section">
       <Container>
         <Row style={{ justifyContent: "center", padding: "10px" }}>
           <Col
@@ -25,7 +25,7 @@ function About() {
             }}
           >
             <h1 style={{ fontSize: "2.1em", paddingBottom: "20px" }}>
-               <strong className="purple">{text[language].introduction}</strong>
+               <strong className="goldenYellow">{text[language].introduction}</strong>
             </h1>
             <Aboutcard />
           </Col>
@@ -38,18 +38,18 @@ function About() {
         </Row>
         
         <h1 className="project-heading">
-          <strong className="purple">{text[language].coding}</strong>{text[language].stack}
+          <strong className="goldenYellow">{text[language].coding}</strong>{text[language].stack}
         </h1>
         <Codestack />
 
         <h1 className="project-heading">
-          <strong className="purple">{text[language].technique}</strong>{text[language].stack}
+          <strong className="goldenYellow">{text[language].technique}</strong>{text[language].stack}
         </h1>
 
         <Techstack />
 
         <h1 className="project-heading">
-          <strong className="purple">{text[language].tools}</strong>{text[language].stack}
+          <strong className="goldenYellow">{text[language].tools}</strong>{text[language].stack}
         </h1>
         <Toolstack />
 

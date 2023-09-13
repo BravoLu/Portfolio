@@ -7,7 +7,7 @@ import "react-image-gallery/styles/css/image-gallery.css";
 
 function MyGallery({ dir }) {
   const [imagePaths, setImagePaths] = useState([]);
-  const {language} = useContext(languageContext);
+  const { language } = useContext(languageContext);
   // useEffect 用法
   useEffect(() => {
     // Function to fetch image paths from the directory
@@ -25,11 +25,13 @@ function MyGallery({ dir }) {
   }, [dir]);
   return (
     <Container fluid className="picture-section">
-      <h1 className='picture-heading'>
-        {dir === "singapore" && text[language].singapore}
-        {dir === "xinjiang" && text[language].xinjiang}
-        {dir === "thailand" && text[language].thailand}
-        {dir === "indonesia" && text[language].indonesia}
+      <h1>
+        <strong className='goldenYellow'>
+          {dir === "singapore" && text[language].singapore}
+          {dir === "xinjiang" && text[language].xinjiang}
+          {dir === "thailand" && text[language].thailand}
+          {dir === "indonesia" && text[language].indonesia}
+        </strong>
       </h1>
       <Row>
         <Col>

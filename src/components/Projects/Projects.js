@@ -3,7 +3,7 @@ import { Container, Row, Col } from "react-bootstrap";
 import ProjectCard from "./ProjectCards";
 import ssae from "../../Assets/Projects/ssae13x13.png";
 import openVehicleReid from "../../Assets/Projects/reid13x13.png";
-import Portfolio from "../../Assets/Projects/website.jpeg"
+import Portfolio from "../../Assets/Projects/website.png"
 import text from "../../scripts.json"
 import { languageContext } from "../Button/LanguageButton";
 
@@ -13,8 +13,10 @@ function Projects() {
   return (
     <Container fluid className="project-section">
       <Container>
-        <h1 className="project-heading">
+        <h1>
+          <strong className="goldenYellow">
           {text[language].projectheading}
+          </strong>
         </h1>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">

@@ -20,14 +20,14 @@ function Resume() {
   return (
     <div>
       <Container fluid className="resume-section">
-        <h1>{text[language].resume}</h1>
+        <h1> <strong className="goldenYellow">{text[language].resume} </strong></h1>
         <Row style={{ justifyContent: "center", position: "relative" }}>
           <Col md={5}>
             <Button
               variant="primary"
               href={pdfZH}
               target="_blank"
-              style={{ maxWidth: "250px" }}
+              className="custom-btn"
             >
               <AiOutlineDownload />
               &nbsp;English Version
@@ -38,7 +38,7 @@ function Resume() {
               variant="primary"
               href={pdfCN}
               target="_blank"
-              style={{ maxWidth: "250px" }}
+              className="custom-btn"
             >
               <AiOutlineDownload />
               &nbsp;中文版

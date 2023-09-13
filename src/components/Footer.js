@@ -5,8 +5,8 @@ import {
   AiOutlineTwitter,
   AiFillYoutube,
 } from "react-icons/ai";
-import XhsIcon from "./xhsicon";
-import BilibiliIcon from "./bilibiliIcon";
+import XhsIcon from "./Icon/xhsicon";
+import BilibiliIcon from "./Icon/bilibiliIcon";
 import text from "../scripts.json"
 import { languageContext } from "./Button/LanguageButton";
 import { FaLinkedinIn } from "react-icons/fa";
@@ -19,10 +19,10 @@ function Footer() {
     <Container fluid className="footer">
       <Row>
         <Col md="4" className="footer-copywright">
-          <h3> <strong className="purple"> {text[language].slogan} </strong> - {text[language].name}</h3>
+          <h3> <strong className="warriorRoyalBlue"> {text[language].slogan} - {text[language].name} </strong></h3>
         </Col>
         <Col md="4" className="footer-copywright">
-          <h3>Copyright © {year} BravoLu</h3>
+          <h3> <strong className="warriorRoyalBlue"> Copyright © {year} BravoLu </strong></h3>
         </Col>
         <Col md="4" className="footer-body">
           <ul className="footer-icons">

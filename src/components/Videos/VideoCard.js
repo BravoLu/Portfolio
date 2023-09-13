@@ -1,6 +1,6 @@
 import React from "react";
 import Card from "react-bootstrap/Card";
-import BilibiliIcon from "../bilibiliIcon";
+import BilibiliIcon from "../Icon/bilibiliIcon";
 import { AiFillYoutube } from "react-icons/ai";
 
 function VideoCard(props) {
@@ -8,7 +8,7 @@ function VideoCard(props) {
         <Card className="card-view">
             <Card.Img variant="top" src={props.imgPath} alt="video-cover"></Card.Img>
             <Card.Body>
-                <Card.Title>{props.Title}</Card.Title>
+                <Card.Title><strong>{props.Title}</strong></Card.Title>
                 <Card.Text style={{ textAlign: "justify", height:"50px" }}>
                     {props.Desc}
                 </Card.Text>

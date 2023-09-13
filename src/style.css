@@ -1,3 +1,4 @@
+
 html {
   --section-background-color: linear-gradient(
     to bottom left,
@@ -11,15 +12,30 @@ html {
     rgba(12, 10, 22, 0.863)
   );
 
-  --imp-text-color: #c770f0;
+  --warriors-blue: #1D428A;
+  --golden-light-yellow: #ffd562;
+  --golden-yellow: #FDB927;
+  --warrior-royal-blue: #006BB6;
 }
 
 body {
   background-image: linear-gradient(to left, rgb(0, 0, 0), rgb(0, 0, 0)) !important;
 }
 
-.purple {
-  color: var(--imp-text-color) !important;
+.warriorsBlue {
+  color: var(--warriors-blue) !important;
+}
+
+.goldenLightYellow {
+  color: var(--golden-light-yellow) !important;
+}
+
+.goldenYellow {
+  color: var(--golden-yellow) !important;
+}
+
+.warriorRoyalBlue {
+  color: var(--warrior-royal-blue) !important;
 }
 
 
@@ -27,14 +43,11 @@ button:focus {
   box-shadow: none !important;
 }
 
-.button-padding {
-  padding: 10px;
-  /* color: #c81717; */
-}
-
 .fixed-size-button {
   width: 100px; /* 设置按钮宽度 */
   height: 40px; /* 设置按钮高度 */
+  margin-left: 120px;
+  /* padding-bottom: 20px; */
   /* 可以添加其他样式，如背景色、颜色、边框等 */
 }
 
@@ -49,7 +62,7 @@ button:focus {
   width: 100%;
   height: 100%;
   z-index: 999999;
-  background-color: #0c0513;
+  background-color: var(--golden-state-blue);
   background-image: url(./Assets/pre.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -74,26 +87,27 @@ button:focus {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #2d1950;
+  background: var(--golden-light-yellow);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(178, 121, 216, 0.959);
+  background: var(--golden-yellow);
   border-radius: 12px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(222, 130, 235, 0.911);
+  background: var(--golden-light-yellow);
   border-radius: 12px;
 }
 
 /* --------- */
 /* Navbar Section  */
 /* --------- */
+
 .sticky {
-  background-color: #1b1a2ea9 !important;
+  background-color: var(--golden-light-yellow) !important;
   transition: all 0.3s ease-out 0s !important;
   box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
   backdrop-filter: blur(15px) !important;
@@ -104,7 +118,8 @@ button:focus {
   transition: all 0.3s ease-out 0s !important;
   padding: 0.3rem 2rem !important;
   font-size: 1.0rem !important;
-  background-color: rgb(10, 4, 22);
+  /* background-color: rgb(10, 4, 22); */
+  background-color: var(--golden-yellow);
 }
 
 .navbar-toggler {
@@ -113,9 +128,20 @@ button:focus {
   border-color: transparent !important;
 }
 
+.nav-text {
+  color: var(--warrior-royal-blue) !important; 
+  font-weight: bold !important;
+}
+
+.nav-icon {
+  color: var(--warrior-royal-blue) !important;
+  margin-bottom: 3px;
+}
+
 .navbar-toggler span {
   display: block !important;
-  background-color: #be50f4 !important;
+  /* background-color: #be50f4 !important; */
+  background-color: #1D428A !important;
   height: 4px !important;
   width: 27px !important;
   margin-top: 5px !important;
@@ -178,7 +204,7 @@ button:focus {
 }
 
 .navbar-nav .nav-link {
-  color: white !important;
+  color: rgb(180, 11, 11) !important;
   padding-right: 1rem !important;
   padding-left: 1rem !important;
 }
@@ -214,21 +240,41 @@ button:focus {
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background: #f5a85b;
+  background: #006BB6;
   bottom: 1px;
   left: 0;
   z-index: -1;
   transition: all 0.3s ease-out 0s;
 }
 
+
 .navbar-nav .nav-item a:hover::after {
   width: 100%;
 }
 
 .dropdown-toggle::after {
-  border-left: 0.0em solid black !important;
-  border-right:  0.0em solid black !important;
-  color: #f5a85b !important;
+  border-left: 0.0em solid var(--warriors-blue) !important;
+  border-right:  0.0em solid var(--warriors-blue) !important;
+  color: #006BB6 !important;
+}
+
+/* Custom CSS to change the background color */
+.custom-dropdown .dropdown-menu {
+  background-color: var(--golden-yellow) !important; /* Change to your desired background color */
+}
+
+/* .custom-dropdown .dropdown-menu:hover {
+  background-color: var(--golden-light-yellow) !important;
+} */
+
+
+.navdropdown-item {
+  color: var(--warrior-royal-blue) !important;
+  font-weight: bolder;
+}
+
+.navdropdown-item:hover {
+  background-color: var(--golden-light-yellow) !important;
 }
 
 /* --------- */
@@ -269,15 +315,6 @@ button:focus {
   }
 }
 
-#tsparticles {
-  /* background-color: black !important;  */
-  position: fixed !important;
-  background-repeat: no-repeat !important;
-  background-size: cover !important;
-  width: 100%;
-  height: 100%;
-}
-
 .home-header {
   padding-top: 80px !important;
 }
@@ -286,7 +323,7 @@ button:focus {
   position: relative;
   z-index: -1;
   /* background-image: var(--image-gradient), url(./Assets/home-bg.jpg); */
-  background-color: black !important;
+  background-color: #1D428A !important;
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 200px !important;
@@ -310,17 +347,17 @@ button:focus {
 }
 
 .main-name {
-  color: #cd5ff8;
+  color: #1D428A;
 }
 
 .Typewriter__wrapper {
   font-size: 2.2em !important;
-  color: #be6adf !important;
+  color: var(--golden-yellow) !important;
   font-weight: 600 !important;
 }
 .Typewriter__cursor {
   font-size: 2.4em !important;
-  color: #b562d6 !important;
+  color: var(--golden-yellow) !important;
 }
 
 @media (max-width: 767px) {
@@ -346,92 +383,18 @@ button:focus {
   }
 }
 
-.home-about-section {
-  /* position: relative; */
-  /* padding-bottom: 70px !important; */
-  /* padding-top: 70px !important; */
-}
-
-.home-about-description {
-  color: white !important;
-  padding-top: 100px !important;
-  padding-bottom: 20px !important;
-  text-align: center;
-}
-
-.home-about-body {
-  padding-top: 50px;
-  font-size: 1.2em !important;
-  text-align: left;
-}
-
-.home-about-social {
-  text-align: center !important;
-  padding-top: 25px;
-  color: white !important;
-}
-
-.home-about-social-links {
-  justify-content: center !important;
-  padding-top: 15px !important;
-  display: inline-block !important;
-  position: relative !important;
-  padding-inline-start: 0 !important;
-}
-
-.home-social-icons {
-  position: relative !important;
-  display: inline-block !important;
-  width: 40px !important;
-  height: 40px !important;
-  text-align: center !important;
-  font-size: 1.2em !important;
-  line-height: 2em !important;
-  background: rgba(255, 255, 255, 0.972) !important;
-  border-radius: 50% !important;
-  transition: 0.5s !important;
-}
-
-.home-social-icons::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background: #68187a;
-  transition: 0.5s;
-  transform: scale(0.9);
-  z-index: -1;
-}
-
-.home-social-icons:hover::before {
-  transform: scale(1.1);
-  box-shadow: 0 0 15px #801f95;
-}
-
-.home-social-icons:hover {
-  color: #87209e;
-  box-shadow: 0 0 5px #87209e;
-  text-shadow: 0 0 2px #87209e;
-}
-
 .social-icons {
   display: inline-block !important;
   padding-right: 15px;
   padding-left: 15px;
 }
 
-.icon-colour {
-  color: #700c86 !important;
-}
-
 /* --------- */
 /* Footer */
 /* --------- */
 .footer {
-  background-color: rgb(10, 4, 22);
+  /* background-color: rgb(10, 4, 22); */
+  background-color: #FFC72C;
   bottom: 0 !important;
   padding-top: 10px !important;
   padding-bottom: 8px !important ;
@@ -479,7 +442,7 @@ button:focus {
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 80px !important;
-  background-color: black !important;
+  background-color: var(--warriors-blue) !important;
 }
 
 .picture-heading {
@@ -506,7 +469,7 @@ button:focus {
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 600px !important;
-  background-color: black !important;
+  background-color: var(--warriors-blue) !important;
 }
 
 .project-card {
@@ -518,17 +481,19 @@ button:focus {
 }
 
 .card-view {
-  box-shadow: 0 8px 9px 7px rgba(119, 53, 136, 0.459) !important;
-  color: white !important;
-  background-color: transparent !important;
+  box-shadow: 0 8px 9px 7px var(--golden-light-yellow) !important;
+  color: var(--golden-light-yellow) !important;
+  background-color: var(--warrior-royal-blue) !important;
   opacity: 0.9 !important;
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
 }
+
 .card-view:hover {
-  transform: scale(1.02) !important;
+  transform: scale(1.05) !important;
+  color: var(--golden-yellow) !important;
   overflow: hidden !important;
-  box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
+  box-shadow: 0 4px 4px 5px var(--golden-yellow) !important;
 }
 
 .video-card {
@@ -562,16 +527,15 @@ button:focus {
   border-radius: 0px !important;
 }
 
+/* left-right button color */
 .btn-primary {
-  color: #fff !important;
-  background-color: #623686 !important;
-  border-color: #623686 !important;
+  color: var(--golden-yellow) !important;
+  background-color: var(--warriors-blue) !important;
 }
 
 .btn-primary:hover {
-  color: #fff !important;
-  background-color: #6d20c5d7 !important;
-  border-color: #6d20c5d7 !important;
+  color: var(--golden-light-yellow) !important;
+  background-color: var(--warrior-royal-blue) !important;
 }
 .btn:focus {
   outline: none !important;
@@ -593,8 +557,8 @@ button:focus {
   padding-top: 150px !important;
   padding-bottom: 30px !important;
   /* background-image: var(--section-background-color) !important; */
-  background-color: black;
-  color: black !important;
+  background-color: var(--warriors-blue) !important;
+  color: var(--golden-yellow) !important;
 }
 
 .tech-icons {
@@ -602,7 +566,7 @@ button:focus {
   margin: 15px !important;
   padding: 10px !important;
   opacity: 0.93 !important;
-  border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
+  border: 1.7px solid var(--golden-light-yellow) !important;
   vertical-align: middle !important;
   text-align: center !important;
   border-radius: 5px !important;
@@ -621,8 +585,9 @@ button:focus {
 .tech-icons:hover {
   transform: scale(1.05) !important;
   overflow: hidden !important;
-  border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
+  border: 2.2px solid var(--golden-light-yellow) !important;
 }
+
 .tech-icon-images {
   padding: 20px !important;
   line-height: 1.6 !important;
@@ -657,7 +622,7 @@ button:focus {
   position: relative !important;
   padding-top: 110px !important;
   padding-bottom: 120px !important;
-  background-color: black !important;
+  background-color: var(--warriors-blue) !important;
   color: white !important;
 }
 
@@ -736,32 +701,6 @@ button:focus {
   border: 2px solid #8a49a8;
 }
 
-.like-item {
-  padding-top: 10px !important;
-  font-size: 1.1em !important;
-  font-family: sans-serif !important;
-}
-
-.like-btn {
-  background-color: #934cce5e !important;
-  border-color: #934cce5e !important;
-  padding: 0.25rem 0.98rem !important;
-  border-radius: 5px !important;
-  line-height: 1.4 !important;
-  transition: 0.3s ease !important;
-}
-
-.like-btn:hover {
-  transform: translateY(-2px) !important;
-  background-color: #a24dd386 !important;
-  border-color: #a24dd386 !important;
-}
-
-.animate-like {
-  animation-name: likeAnimation;
-  animation-fill-mode: forwards;
-  animation-duration: 0.85s;
-}
 @keyframes likeAnimation {
   0% {
     transform: scale(1.5);
@@ -773,22 +712,27 @@ button:focus {
 
 .fork-btn {
   font-size: 1.1em !important;
-  padding-top: 10px !important;
+  padding-top: 5px !important;
 }
 
 .fork-btn-inner {
   line-height: 1.4em !important;
-  background-color: #934cce5e !important;
+  background-color: #1D428A !important;
   padding: 0.25rem 1.1rem !important;
   vertical-align: middle !important;
   text-align: center !important;
 }
 
+.custom-btn {
+  border-color: var(--golden-yellow) !important;
+}
+
 .fork-btn-inner:hover {
   transform: translateY(-2px) !important;
-  background-color: #a24dd386 !important;
-  border-color: #a24dd386 !important;
+  background-color: #034b7f !important;
+  border-color: #16131786 !important;
 }
+
 .fork-btn-inner::after {
   display: none !important;
 }
@@ -796,6 +740,7 @@ button:focus {
 .tech-icon-container {
   position: relative;
 }
+
 .tech-icon-tooltip {
   position: absolute;
   top: 50%;
@@ -803,7 +748,7 @@ button:focus {
   transform: translateX(-50%);
   visibility: hidden;
   background-color: #333;
-  color: #fff;
+  color: var(--golden-yellow);
   padding: 5px;
   border-radius: 5px;
   font-size: 12px;
@@ -817,7 +762,7 @@ button:focus {
   position: relative !important;
   padding-top: 150px !important;
   padding-bottom: 100px !important;
-  background-color: black !important;
+  background-color: var(--warriors-blue) !important;
 }
 
 .custom-thumbnail {

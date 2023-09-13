@@ -6,8 +6,8 @@ import {
   AiOutlineTwitter,
   AiFillYoutube,
 } from "react-icons/ai";
-import XhsIcon from "../xhsicon";
-import BilibiliIcon from "../bilibiliIcon";
+import XhsIcon from "../Icon/xhsicon";
+import BilibiliIcon from "../Icon/bilibiliIcon";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function SocialMedia() {

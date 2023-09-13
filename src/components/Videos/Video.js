@@ -10,7 +10,7 @@ function Video() {
     return (
         <Container fluid className="video-section">
             <Container>
-                <h1 className="project-heading">English Channel</h1>
+                <h1><strong className="goldenYellow">English Channel</strong></h1>
                 <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
                     <Col md={4} className="video-card">
                         <VideoCard imgPath={YTPhoto}
@@ -29,7 +29,7 @@ function Video() {
                     </Col>
                 </Row>
                 <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
-                    <h1 className="project-heading">中文频道</h1>
+                    <h1><strong className="goldenYellow">中文频道</strong></h1>
                     <Col md={4} className="video-card">
                         <VideoCard imgPath={mabaoguo}
                             Title="马保国进军二次元"
