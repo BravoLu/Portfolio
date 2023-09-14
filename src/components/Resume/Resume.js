@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useContext } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import Button from "react-bootstrap/Button";
-import pdfZH from "../../Assets/bravolu_cv.pdf";
-import pdfCN from "../../Assets/bravolu_cv_cn.pdf"
+import pdfZH from "../../Assets/bravolu_cv_v1.pdf";
+import pdfCN from "../../Assets/bravolu_cv_cn_v1.pdf"
 import { AiOutlineDownload } from "react-icons/ai";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
