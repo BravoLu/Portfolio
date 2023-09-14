@@ -18,8 +18,10 @@ html {
   --warrior-royal-blue: #006BB6;
 }
 
+
+/* this CSS for background color */
 body {
-  background-image: linear-gradient(to left, rgb(0, 0, 0), rgb(0, 0, 0)) !important;
+  background-image: linear-gradient(to left, var(--warriors-blue), var(--warriors-blue)) !important;
 }
 
 .warriorsBlue {
@@ -319,16 +321,24 @@ button:focus {
   padding-top: 80px !important;
 }
 
-.home-section {
+/* .home-section {
   position: relative;
   z-index: -1;
-  /* background-image: var(--image-gradient), url(./Assets/home-bg.jpg); */
   background-color: #1D428A !important;
   background-position: top center;
   background-repeat: no-repeat;
   padding-bottom: 200px !important;
   padding-top: 30px !important;
+  height: auto !important;
+} */
+
+.home-section {
+  position: relative !important;
+  padding-top: 150px !important;
+  padding-bottom: 100px !important;
+  background-color: var(--warriors-blue) !important;
 }
+
 
 .home-content {
   padding: 9rem 0 9rem !important;
