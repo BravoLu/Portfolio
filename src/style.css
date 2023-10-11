@@ -103,7 +103,6 @@ button:focus {
   background: var(--golden-light-yellow);
   border-radius: 12px;
 }
-
 /* --------- */
 /* Navbar Section  */
 /* --------- */
@@ -189,7 +188,7 @@ button:focus {
 @media (max-width: 767px) {
   .navbar {
     padding: 1rem 2rem !important;
-    font-size: 1.2rem !important;
+    font-size: 1.1rem !important;
     background-color: var(--golden-yellow) !important;
   }
   .navbar-nav .nav-item a::after {

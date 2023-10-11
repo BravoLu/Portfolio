@@ -48,7 +48,7 @@ function NavBar() {
     >
       <Container>
         <Navbar.Brand href="/" className="d-flex">
-          {/* <img src={logo} className="img-fluid logo" alt="brand" /> */}
+          BravoLu
         </Navbar.Brand>
         <Navbar.Toggle
           aria-controls="responsive-navbar-nav"
@@ -56,9 +56,6 @@ function NavBar() {
             updateExpanded(expand ? false : "expanded");
           }}
         >
-          <span></span>
-          <span></span>
-          <span></span>
         </Navbar.Toggle>
         <GSWIcon />
         <Navbar.Collapse id="responsive-navbar-nav">
@@ -98,7 +95,7 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
             <Nav.Item>
-              <Nav.Link href="https://tough-bean-713.notion.site/BravoLu-5ea3a398f8824c8488e3da2be0133ff4?pvs=4" target="_blank" rel="noreferrer">
+              <Nav.Link href="https://www.notion.so/BravoLu-5ea3a398f8824c8488e3da2be0133ff4?pvs=4" target="_blank" rel="noreferrer">
                 <NotionIcon className="nav-icon" />
                 <span className="nav-text">
                   {text[language].blog}
