@@ -31,6 +31,7 @@ function MyGallery({ dir }) {
           {dir === "xinjiang" && text[language].xinjiang}
           {dir === "thailand" && text[language].thailand}
           {dir === "indonesia" && text[language].indonesia}
+          {dir === "srilanka" && text[language].srilanka} 
         </strong>
       </h1>
       <Row>

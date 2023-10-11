@@ -46,7 +46,8 @@ function App() {
             <Route path="/pictures/xinjiang" element={<MyGallery dir="xinjiang"/>} />
             <Route path="/pictures/indonesia" element={<MyGallery dir="indonesia"/>} />
             <Route path="/pictures/singapore" element={<MyGallery dir="singapore"/>} />
-            <Route path="/pictures/thailand" element={<MyGallery dir="thailand"/>} />            
+            <Route path="/pictures/thailand" element={<MyGallery dir="thailand"/>} />
+            <Route path="/pictures/srilanka" element={<MyGallery dir="srilanka"/>} />           
             <Route path="/video" element={<Video />} />
             <Route path="/images" />
             <Route path="*" element={<Navigate to="/" />} />

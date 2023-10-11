@@ -97,9 +97,8 @@ function NavBar() {
                 </span>
               </Nav.Link>
             </Nav.Item>
-
             <Nav.Item>
-              <Nav.Link href="https://bravolu.vercel.app/" target="_blank" rel="noreferrer">
+              <Nav.Link href="https://tough-bean-713.notion.site/BravoLu-5ea3a398f8824c8488e3da2be0133ff4?pvs=4" target="_blank" rel="noreferrer">
                 <NotionIcon className="nav-icon" />
                 <span className="nav-text">
                   {text[language].blog}
@@ -141,6 +140,13 @@ function NavBar() {
                 onClick={() => updateExpanded(false)}
                 className="navdropdown-item"
               >{text[language].singapore}
+              </NavDropdown.Item>
+              <NavDropdown.Item
+                as={Link}
+                to="/Pictures/srilanka"
+                onClick={() => updateExpanded(false)}
+                className="navdropdown-item"
+              >{text[language].srilanka}
               </NavDropdown.Item>
             </NavDropdown>
 
