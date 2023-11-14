@@ -55,8 +55,9 @@ function Projects() {
               imgPath={GenshinImpactImage}
               isBlog={false}
               title="Genshin Impact Character Gallery"
-              description={text[language].project3Desc}
+              description={text[language].GenshinImpact}
               ghLink="https://github.com/BravoLu/Genshin-Impact-Characters"
+              demoLink="https://genshin-impact-character-gallery.vercel.app/"
             />
           </Col>
         </Row>
