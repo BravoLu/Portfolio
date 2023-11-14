@@ -6,6 +6,7 @@ import openVehicleReid from "../../Assets/Projects/reid13x13.png";
 import Portfolio from "../../Assets/Projects/website.png"
 import text from "../../scripts.json"
 import { languageContext } from "../Button/LanguageButton";
+import  GenshinImpactImage  from "../../Assets/Projects/Genshin-Impact-Character-Gallery.jpg"
 
 function Projects() {
   const {language} = useContext(languageContext);
@@ -46,6 +47,16 @@ function Projects() {
               title="Personal Website"
               description={text[language].project3Desc}
               ghLink="https://github.com/BravoLu/Portfolio"
+            />
+          </Col>
+
+          <Col md={4} className="project-card">
+            <ProjectCard
+              imgPath={GenshinImpactImage}
+              isBlog={false}
+              title="Genshin Impact Character Gallery"
+              description={text[language].project3Desc}
+              ghLink="https://github.com/BravoLu/Genshin-Impact-Characters"
             />
           </Col>
         </Row>

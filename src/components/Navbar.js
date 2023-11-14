@@ -57,7 +57,7 @@ function NavBar() {
           }}
         >
         </Navbar.Toggle>
-        <GSWIcon />
+        
         <Navbar.Collapse id="responsive-navbar-nav">
           <Nav className="ms-auto" defaultActiveKey="#home">
             <Nav.Item>
